@@ -1,5 +1,8 @@
 const readlineSync = require("readline-sync");
 var userName;
+console.log(
+  "welcome to the game \nThis is a quiz on basics of web development. \nIt has five questions and has four options each. \nFor every correct answer, your score increments by one point and there is no negative marking.\nAfter submission, your score out of 5 will be displayed on the screen."
+);
 function nameFun() {
   userName = readlineSync.question("Enter your name :");
 }
@@ -56,4 +59,6 @@ for (let i = 0; i < userAnswers.length; i++) {
   }
 }
 
-console.log(`Hi ${userName}, you scored ${score}/5`);
+console.log(
+  `Hi ${userName}, you scored ${score}/5. \nCorrect Answers: Hyper Text Markup Language, Cascading Style Sheet, Inside the head section, Text-align:center;, True \nYour Answers: ${questionOne},${questionTwo},${questionThree},${questionFour},${questionFive} `
+);
